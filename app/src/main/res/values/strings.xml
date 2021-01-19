@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Task</string>
+
+    <string name="employeeaddress"><![CDATA[
+    Address: %1$s <br> %1$s]]></string>
+
+    <string name="employeid"><![CDATA[
+    <b> Employee id: </b>  %1$s  ]]></string>
+    <string name="employename"><![CDATA[
+    <b> Name: </b>  %1$s  ]]></string>
+    <string name="employeemail"><![CDATA[
+    <b> Email: </b>  %1$s  ]]></string>
+    <string name="employeaddres"><![CDATA[
+    <b> Address: </b>  %1$s  ]]></string>
+    <string name="employephone"><![CDATA[
+    <b> Phone Number: </b>  %1$s  ]]></string>
+    <string name="employecompanyname"><![CDATA[
+    <b> Company Name: </b>  %1$s  ]]></string>
+    <string name="employecompanyweb"><![CDATA[
+    <b> Website: </b>  %1$s  ]]></string>
+
+</resources>

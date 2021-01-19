@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDet">
+    <androidx.appcompat.widget.Toolbar
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:theme="@style/ToolBarStyle"
+        android:layout_height="?attr/actionBarSize"
+        >
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Employee Detail"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/empdet"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:id="@+id/empltitle"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:text="Employee Detail"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/emplid"
+                android:textSize="12sp"
+                android:text="Employee id"
+                app:layout_constraintTop_toBottomOf="@+id/empltitle"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/emplname"
+                android:textSize="12sp"
+                android:text="Employee id"
+                app:layout_constraintTop_toBottomOf="@+id/emplid"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/emplemail"
+                android:textSize="12sp"
+                android:text="Employee id"
+                app:layout_constraintTop_toBottomOf="@+id/emplname"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/empladdress"
+                android:textSize="12sp"
+                android:layout_marginEnd="20dp"
+                android:text="Employee id"
+                app:layout_constraintTop_toBottomOf="@+id/emplemail"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:autoLink="phone"
+                android:layout_margin="10dp"
+                android:id="@+id/emplphone"
+                android:textSize="12sp"
+                android:text="Employee id"
+                app:layout_constraintTop_toBottomOf="@+id/empladdress"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/empcom"
+        app:layout_constraintTop_toBottomOf="@id/empdet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/empcompll"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Company Details:"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/empcompll"
+                android:text="Company name"
+                android:layout_margin="10dp"
+                android:textSize="11sp"
+                android:id="@+id/companyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/companyname"
+                android:text="Company name"
+                android:layout_margin="10dp"
+                android:textSize="11sp"
+                android:id="@+id/companyweb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
